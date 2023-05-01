@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* popup */
+.popup{
+    position: fixed; left: 0; top: 0; z-index: 8000; 
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.p_wrap{
+    position: absolute; left: 0; right: 0; top: 50%;
+    width: 80%;  margin: 0 auto;
+    overflow: hidden; 
+    background-color: #fff; border-radius: 10px; border: 3px solid #82cff5;
+    transform: translateY(-50%); 
+}
+.p_wrap h4{
+    width: 100%; padding: 8px 16px 0; margin-bottom: 20px;
+    font-size: 1.5rem; color: #333; text-transform: capitalize;
+}
+.p_wrap p{
+    width: 100%; padding: 0 16px; margin-bottom: 10px;
+}
+.p_wrap p:last-of-type{ margin-bottom: 20px; }
+.p_wrap ul{
+    display: flex;
+    width: 100%; border-top: 1px solid #ccc;
+}
+.p_wrap li{ flex: 1; } 
+.p_wrap li:first-child{ border-right: 1px solid #ccc; }
+.p_wrap a{ display: block; padding: 12px; text-align: center; }
+.p_wrap .today_btn{ color: #f29031; font-weight: 500; }
+
+/* main */
+main .swiper-slide{ position: relative; }
+main .swiper-slide img{ width: 100%; }
+main .swiper-pagination-bullet{
+    width: 8px; height: 8px; opacity: 1; 
+    background-color: #fff; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+main .swiper-pagination-bullet-active {
+    background-color: #82cff5;
+}
+
+/* title */
+h2{
+    margin-bottom: 16px;
+    color: #333; font-size: 1.5rem;  font-family: 'Hahmlet-Regular';
+    text-transform: uppercase; text-align: center; 
+}
+h3{ color: #333; font-size: 1.5rem; }
+
+/* menu */
+.menu { position: relative; padding: 24px 0; }
+.menu .swiper{ padding-left: 16px; padding-bottom: 16px; margin-bottom: 2rem; }
+.menu h2{ margin-bottom: 24px; }
+.menu h2::after{
+    content: '';
+    position: absolute; top: 2.75rem; left: 0;  
+    width: 8.5rem; border-bottom: 3px solid #333;
+}
+.menu .swiper-slide a{
+    display: block; width: 10rem; margin-bottom: 16px;
+    border-radius: 50%; border: 1px solid #999;
+    background-color: #fff; overflow: hidden; 
+}
+.menu .swiper-slide img{
+    width: 10rem; border-radius: 50%; 
+}
+.menu .swiper-slide figcaption{ 
+    width: 10rem; text-align: center; margin-bottom: 8px;
+}
+.menu .swiper-horizontal>.swiper-pagination-progressbar, .menu .swiper-pagination-progressbar.swiper-pagination-horizontal, .menu .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .menu .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+    left: 16px; top: auto; bottom: 0;
+    width: calc(100% - 32px);
+}
+.menu .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: #f29031;
+}
+.menu .menu_btn{
+    display: block; margin: 0 auto;
+    width: 12.5rem; height: 3rem; line-height: 3rem;
+    border-radius: 8px; color: #f29031; text-align: center; 
+    font-weight: 700; border: 1px solid #f29031;
+}
+
+/* promotion */
+.promotion img{
+    width: 100%; object-fit: cover;
+}
+.promotion > div{ position: relative; }
+.promotion .text_wrap{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 100%; text-align: center; 
+}
+.promotion .text_wrap h3, .promotion .text_wrap p{ color: #fff; text-transform: uppercase; }
+.promotion .text_wrap h3{
+    font-family: 'Hahmlet-Regular'; font-size: 1.25rem; margin-bottom: 8px;
+}
+.promotion .text_wrap p{
+    width: 100%; font-size: 0.875rem;
+}
+
+/* brand_info */
+.brand_info{ padding: 24px 0; }
+.brand_info p{ width: 100%; padding: 16px; text-align: justify; font-size: 0.875rem; }
+.brand_info .btn_wrap{
+    display: flex; justify-content: space-between; 
+    width: calc(100% - 32px); height: 3rem; margin: 8px auto;
+}
+.brand_info .btn_wrap > a{
+    display: block; width: calc(50% - 8px); height: 100%; line-height: 3rem;
+    text-align: center; border-radius: 8px; color: #f29031; 
+    font-weight: 700; border: 1px solid #f29031;
+}
+.brand_info .btn_wrap > a:last-child{ border: 1px solid #999; color: #999; }
+
+/* board */
+.board{
+    position: relative; 
+    width: 100%; padding-bottom: 50px;
+    margin-bottom: 24px;
+}
+.board h2{ 
+    width: 100%; height: 100%; 
+    padding: 0 16px; text-align: left; color: #333; 
+}
+.board .event_text{ padding: 0 16px; }
+.board .event_text .swiper-slide{ background-color: #fff; }
+.board .event_text h3{ font-size: 1.5rem; margin: 8px 0; }  
+.board .event_text .period{ display: block; margin: 8px 0; }
+.board .event_text .more_btn{ 
+    display: block; width: 100%; height: 3rem; line-height: 3rem; margin: 16px 0; text-align: center; color: #82cff5; font-weight: 700;
+    background-color: #fff; border-radius: 8px; border: 1px solid #82cff5;
+}
+.board .event_img .swiper-wrapper{ padding: 0 16px; }
+.board .event_img .swiper-slide img{ 
+    width: 100%; height: 100%; object-fit: cover; 
+    border: 1px solid #999; 
+}
+.board .swiper-pagination::before{
+    content: '←';
+    position: absolute; bottom: 0; left: calc(50% - 3rem);
+}
+.board .swiper-pagination::after{
+    content: '→';
+    position: absolute; bottom: 0; right: calc(50% - 3rem);
+}
+
+/* affiliation */
+.affiliation{
+    position: relative; 
+    width: 100%; height: 100%; margin-bottom: 24px;
+}
+.affiliation img{ 
+    width: 100%; height: 100%; object-fit: cover;
+}
+.affiliation .text_wrap{
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: absolute; left: 0; top: 0; 
+    width: 100%; height: 100%; text-align: center;
+}
+.affiliation h3{ margin-bottom: 8px; }
+.affiliation h3, .affiliation p{ color: #fff; }
+.affiliation p{ font-size: 0.75rem; }
+
+
+/* video */
+.video { width: 100%; height: 100%; }
+.video .movie{
+    width: 100%; padding: 0 16px; margin-bottom: 24px;
+    border: none;
+}
+
+/* sns */
+.sns{ 
+    width: 100%; height: 100%; margin-bottom: 24px;
+}
+.sns > p{ width: 100%; text-align: center; margin-bottom: 16px; }
+.sns .icon_wrap{ 
+    display: flex; justify-content: space-between;
+    width: 50%; padding: 16px 0; margin: 0 auto;
+}
+
+
+
+/* iphone6/7/8 + android */
+@media screen and (max-width: 375px) {
+    
+}
+/* iphone5 + SE */
+@media screen and (max-width: 320px) {
+    .menu h2::after{
+        content: '';
+        position: absolute; top: 3rem; left: 0;  
+        width: 9rem; border-bottom: 3px solid #333;
+    }
+    .sns .icon_wrap{ width: 60%; padding: 8px 0; }
+}
